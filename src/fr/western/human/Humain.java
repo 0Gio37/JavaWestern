@@ -5,13 +5,18 @@ public class Humain {
     private String name;
     private String boisson;
 
-     public Humain(String name){
+     protected Humain(String name, String boisson){
+        this.name= name;
+        this.boisson = boisson;
+    }
+
+    public Humain(String name){
         this.name= name;
         this.boisson = "l'eau";
     }
 
     public void parle(String texte){
-        System.out.println("("+this.name+")" + " - " + texte);
+        System.out.print("("+this.name+")" + " - " + texte);
     }
 
     public void sePresenter(){
@@ -22,8 +27,8 @@ public class Humain {
         System.out.println("Ah ! un bon verre de "+this.boisson+ "! GLOUPS !");
     }
 
-    public String quel_est_ton_nom(){
-       return this.name;
+    public void quel_est_ton_nom(){
+        System.out.println("Je suis "+this.name);
     }
 
     public String boisson_favorite(){
