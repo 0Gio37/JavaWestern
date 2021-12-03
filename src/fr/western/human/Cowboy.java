@@ -26,7 +26,7 @@ public class Cowboy extends Humain{
         System.out.println("On dit de moi que je suis "+this.profil+". J'ai un indice de "+this.rating+" de popularité");
     }
 
-    public void ShootBrigand(Hors_la_loi outlaw){
+    public void shootBrigand(Hors_la_loi outlaw){
         System.out.println("Le "+this.profil+" "+this.name+" tire sur "+outlaw.getName()+". PAN !");
         System.out.println("get that !!");
     }

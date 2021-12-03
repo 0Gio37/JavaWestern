@@ -12,13 +12,28 @@ public class Histoire {
         Barman barman2 = new Barman("Michel","Mimich");
         Sherif sherif1 = new Sherif("Rosco",5);
         Cowboy sherif2 = new Sherif("BossOg", 1);
+        Ripoux ripoux1 = new Ripoux("gégé", 500);
+
+        Humain[] tbHumain = new Humain[5];
+        tbHumain[0] = humain1;
+        tbHumain[1] = cowboy1;
+        tbHumain[2] = dame1;
+        tbHumain[3] = sherif1;
+        tbHumain[4] = brigand1;
+
+        for (int i=0; i< tbHumain.length; i++){
+            System.out.println(tbHumain[i].getName());
+        }
 
 
-        sherif1.sePresenter();
-        brigand1.kidnappe(dame1);
+
 
 
         /*
+        System.out.println(ripoux1.recompensePourCapture());
+        sherif1.sePresenter();
+        brigand1.kidnappe(dame1);
+        cowboy1.shootBrigand(brigand1);
         barman1.sePresenter();
         barman2.sePresenter();
         barman1.parle("Ca fait 10€ le verre");

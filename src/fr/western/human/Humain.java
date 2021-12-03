@@ -15,6 +15,10 @@ public class Humain {
         this.boisson = "l'eau";
     }
 
+    public String getName(){
+         return this.name;
+    }
+
     public void parle(String texte){
         System.out.print("("+this.name+")" + " - " + texte);
     }
