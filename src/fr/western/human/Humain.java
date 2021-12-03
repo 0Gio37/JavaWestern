@@ -2,20 +2,20 @@ package fr.western.human;
 
 public class Humain {
 
-    private String nom;
+    private String name;
     private String boisson;
 
-     public Humain(String nom){
-        this.nom= nom;
-        this.boisson = "eau";
+     public Humain(String name){
+        this.name= name;
+        this.boisson = "l'eau";
     }
 
     public void parle(String texte){
-        System.out.println("("+this.nom+")" + " - " + texte);
+        System.out.println("("+this.name+")" + " - " + texte);
     }
 
     public void sePresenter(){
-        System.out.println("Bonjour, je m'appelle "+this.nom+" et ma boisson favorite est : "+this.boisson);
+        System.out.println("Bonjour, je m'appelle "+this.name+" et ma boisson favorite est "+this.boisson);
     }
 
     public void boire(){
@@ -23,7 +23,7 @@ public class Humain {
     }
 
     public String quel_est_ton_nom(){
-       return this.nom;
+       return this.name;
     }
 
     public String boisson_favorite(){
