@@ -10,12 +10,17 @@ public class Histoire {
         Brigand brigand1 = new Brigand("Dalton",3,false);
         Barman barman1 = new Barman("Polly");
         Barman barman2 = new Barman("Michel","Mimich");
+        Sherif sherif1 = new Sherif("Rosco",5);
+        Cowboy sherif2 = new Sherif("BossOg", 1);
 
+
+        sherif1.sePresenter();
+
+
+        /*
         barman1.sePresenter();
         barman2.sePresenter();
         barman1.parle("Ca fait 10€ le verre");
-
-        /*
         dame1.boire();
         humain1.boire();
         humain1.sePresenter();
