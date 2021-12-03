@@ -13,10 +13,13 @@ public class Dame extends Humain{
         this.status = "libre";
     }
 
-
     public void sePresenter(){
         super.sePresenter();
         System.out.println("J'ai une superbe robe "+this.dressColor);
+    }
+
+    public String getName(){
+        return this.name;
     }
 
     public String getStatus(){
@@ -32,9 +35,8 @@ public class Dame extends Humain{
     this.setStatus("captive");
     }
 
-
-    public void Etrelibere(String cowboyName){
-        System.out.println("Merci mon héros ! "+cowboyName+" :)");
+    public void Etrelibere(Hors_la_loi outlaw){
+        System.out.println("Merci mon héros ! "+outlaw.getName()+" :)");
         this.setStatus("libre");
     }
 
@@ -45,7 +47,5 @@ public class Dame extends Humain{
     public void quel_est_ton_nom(){
         System.out.println("Miss "+this.name);
     }
-
-
 
 }

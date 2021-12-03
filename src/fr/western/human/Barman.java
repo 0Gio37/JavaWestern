@@ -20,9 +20,8 @@ public class Barman extends Humain{
         super.sePresenter();
         if(this.barName != null) {
             System.out.println("mon bar s'appelle " + this.barName);
-        } else{
+        }else{
             System.out.println("J'ai n'ai plus de bar pour l'instant");
-
         }
     }
 
@@ -30,6 +29,8 @@ public class Barman extends Humain{
         super.parle(texte);
         System.out.println(" Coco");
     }
+
+
 
 
 }

@@ -1,6 +1,6 @@
 package fr.western.human;
 
-public class Brigand extends Humain{
+public class Brigand extends Humain implements Hors_la_loi{
 
     private String name;
     private String look;
@@ -8,7 +8,7 @@ public class Brigand extends Humain{
     private int forFreeze;
     private boolean inJail;
 
-    public Brigand(String name, int dameKidnapped, boolean inJail){
+    public Brigand (String name, int dameKidnapped, boolean inJail){
         super(name, "tord-boyau");
         this.name = name;
         this.look = "méchant";
@@ -17,17 +17,22 @@ public class Brigand extends Humain{
         this.inJail = inJail;
     }
 
+    public String getName(){
+        return this.name;
+
+    }
+
     public void sePresenter(){
         super.sePresenter();
         System.out.println("J'ai l'air "+this.look+" et j'ai kidnappé "+this.dameKidnapped+" dames");
     }
 
-    public void kidnappe(String nomDame){
-        System.out.println("Ah ah ! "+nomDame+" tu es mienne désormais !");
+    public void kidnappe(Dame dame){
+        System.out.println("Ah ah ! "+dame.getName()+" tu es mienne désormais !");
     }
 
-    public void enprisonne(String nomCowboy){
-        System.out.println("Damned, je suis fait ! fucking "+nomCowboy+" u got me ....");
+    public void emprisonneBy(Cowboy cowboy){
+        System.out.println("Damned, je suis fait ! fucking "+cowboy.getName()+" u got me ....");
     }
 
     public int recompensePourCapture(){

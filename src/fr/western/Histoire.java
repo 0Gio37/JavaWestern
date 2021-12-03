@@ -15,6 +15,7 @@ public class Histoire {
 
 
         sherif1.sePresenter();
+        brigand1.kidnappe(dame1);
 
 
         /*
