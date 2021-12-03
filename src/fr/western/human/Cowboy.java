@@ -6,11 +6,14 @@ public class Cowboy extends Humain{
     private int rating;
     private String profil;
 
-
-    public Cowboy(String name, int rating, String profil){
+    public Cowboy(String name){
         super(name);
         this.rating=0;
         this.profil = "vaillant";
+    }
+
+    public int getRating(){
+        return this.rating;
     }
 
     public void ShootBrigand(String brigandName){
@@ -20,6 +23,7 @@ public class Cowboy extends Humain{
 
     public void libererdame(String dameName){
         System.out.println("Liberée ma Belle "+dameName+" !");
+        this.rating += 1;
     }
 
 

@@ -8,11 +8,11 @@ public class Brigand extends Humain{
     private int forFreeze;
     private boolean inJail;
 
-    public Brigand(String name, String look, int dameKidnapped, int forFreeze, boolean inJail){
+    public Brigand(String name, int dameKidnapped, boolean inJail){
         super(name);
         this.look = "méchant";
-        this.dameKidnapped = dameKidnapped;
         this.forFreeze = 100;
+        this.dameKidnapped = dameKidnapped;
         this.inJail = inJail;
     }
 
