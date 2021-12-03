@@ -5,7 +5,7 @@ public class Humain {
     private String nom;
     private String boisson;
 
-    Humain(String nom){
+     public Humain(String nom){
         this.nom= nom;
         this.boisson = "eau";
     }

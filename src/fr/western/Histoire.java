@@ -1,7 +1,10 @@
 package fr.western;
 
+import fr.western.human.Humain;
+
 public class Histoire {
     public static void main(String[] args) {
-        System.out.println("hello");
+        Humain humain1 = new Humain("john");
+
     }
 }
