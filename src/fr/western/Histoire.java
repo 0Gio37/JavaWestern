@@ -14,14 +14,17 @@ public class Histoire {
         Cowboy sherif2 = new Sherif("BossOg", 1);
         Ripoux ripoux1 = new Ripoux("gégé", 500);
         Femme_Brigand femmeBrigand1 = new Femme_Brigand("Calmamity","red");
+        Indien indien1 = new Indien("tornado", 10);
 
-        femmeBrigand1.boire();
+
+
+        /*
+               indien1.sePresenter();
+        indien1.sePresenter("hello");
+        brigand1.beScalp();
+           femmeBrigand1.boire();
         femmeBrigand1.kidnappe(dame1);
         femmeBrigand1.emprisonneBy(cowboy1);
-
-
-
-
         Humain[] tbHumain = new Humain[6];
         tbHumain[0] = humain1;
         tbHumain[1] = cowboy1;
@@ -29,16 +32,9 @@ public class Histoire {
         tbHumain[3] = sherif1;
         tbHumain[4] = brigand1;
         tbHumain[5] = femmeBrigand1;
-
         for (int i=0; i< tbHumain.length; i++){
             System.out.println(tbHumain[i].getName());
         }
-
-
-
-
-
-        /*
         System.out.println(ripoux1.recompensePourCapture());
         sherif1.sePresenter();
         brigand1.kidnappe(dame1);

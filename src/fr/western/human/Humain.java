@@ -20,7 +20,7 @@ public class Humain {
     }
 
     public void parle(String texte){
-        System.out.print("("+this.name+")" + " - " + texte);
+         System.out.print("("+this.name+")" + " - " + texte);
     }
 
     public void sePresenter(){
@@ -28,15 +28,15 @@ public class Humain {
     }
 
     public void boire(){
-        System.out.println("Ah ! un bon verre de "+this.boisson+ "! GLOUPS !");
+         System.out.println("Ah ! un bon verre de "+this.boisson+ "! GLOUPS !");
     }
 
     public void quel_est_ton_nom(){
-        System.out.println("Je suis "+this.name);
+         System.out.println("Je suis "+this.name);
     }
 
     public String boisson_favorite(){
-        return this.boisson;
+         return this.boisson;
     }
 
 }

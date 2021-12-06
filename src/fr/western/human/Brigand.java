@@ -1,6 +1,6 @@
 package fr.western.human;
 
-public class Brigand extends Humain implements Hors_la_loi{
+public class Brigand extends Humain implements Hors_la_loi, Visage_Pale{
 
     private String name;
     private String look;
@@ -43,6 +43,8 @@ public class Brigand extends Humain implements Hors_la_loi{
         System.out.println("Je suis "+this.name+" le "+this.look);
     }
 
-
+    public void beScalp(){
+        System.out.println("Aie ma tête !");
+    }
 
 }

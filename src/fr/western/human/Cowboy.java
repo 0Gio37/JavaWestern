@@ -1,6 +1,6 @@
 package fr.western.human;
 
-public class Cowboy extends Humain{
+public class Cowboy extends Humain implements Visage_Pale{
 
     private String name;
     private int rating;
@@ -34,6 +34,10 @@ public class Cowboy extends Humain{
     public void libererDame(String dameName){
         System.out.println("Liberée ma Belle "+dameName+" !");
         this.rating += 1;
+    }
+
+    public void beScalp(){
+        System.out.println("Aie ma tête !");
     }
 
 

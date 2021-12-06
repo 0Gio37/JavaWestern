@@ -1,6 +1,6 @@
 package fr.western.human;
 
-public class Dame extends Humain{
+public class Dame extends Humain implements Visage_Pale{
 
     private String dressColor;
     private String status;
@@ -46,6 +46,10 @@ public class Dame extends Humain{
 
     public void quel_est_ton_nom(){
         System.out.println("Miss "+this.name);
+    }
+
+    public void beScalp(){
+        System.out.println("Aie ma tête !");
     }
 
 }
