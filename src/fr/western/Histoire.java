@@ -16,9 +16,20 @@ public class Histoire {
         Femme_Brigand femmeBrigand1 = new Femme_Brigand("Calmamity","red");
         Indien indien1 = new Indien("tornado", 10);
 
+sherif1.sePresenter();
+sherif1.shootBrigand(brigand1);
+sherif1.coffrerBrigand(brigand1);
+sherif1.rechercherBrigand(brigand1);
+
+brigand1.beScalp();
 
 
         /*
+        barman1.quel_est_ton_nom();
+        barman2.sePresenter();
+              System.out.println(cowboy1.getRating());
+        cowboy1.libererDame(dame1);
+        System.out.println(cowboy1.getRating());
                indien1.sePresenter();
         indien1.sePresenter("hello");
         brigand1.beScalp();

@@ -3,14 +3,11 @@ package fr.western.human;
 public class Dame extends Humain implements Visage_Pale{
 
     private String dressColor;
-    private String status;
-    private String name;
+    private boolean isCaptive;
 
     public Dame(String name, String dressColor){
         super(name, "lait");
-        this.name = name;
         this.dressColor = dressColor;
-        this.status = "libre";
     }
 
     public void sePresenter(){
@@ -19,25 +16,25 @@ public class Dame extends Humain implements Visage_Pale{
     }
 
     public String getName(){
-        return this.name;
+        return super.getName();
     }
 
-    public String getStatus(){
-        return this.status;
+    public Boolean getStatus(){
+        return this.isCaptive;
     }
 
-    public void setStatus(String newState){
-        this.status = newState;
+    public void setStatus(boolean val ){
+        this.isCaptive = val;
     }
 
     public void EtreKidnap(){
     System.out.println("A L'AIDEEEEE !!!");
-    this.setStatus("captive");
+    this.setStatus(false);
     }
 
-    public void Etrelibere(Hors_la_loi outlaw){
-        System.out.println("Merci mon héros ! "+outlaw.getName()+" :)");
-        this.setStatus("libre");
+    public void Etrelibere(Cowboy cowboy){
+        System.out.println("Merci mon héros ! "+cowboy.getName()+" :)");
+        this.setStatus(true);
     }
 
     public void setDressColor(String newColor){
@@ -45,7 +42,7 @@ public class Dame extends Humain implements Visage_Pale{
     }
 
     public void quel_est_ton_nom(){
-        System.out.println("Miss "+this.name);
+        System.out.println("Miss "+super.getName());
     }
 
     public void beScalp(){

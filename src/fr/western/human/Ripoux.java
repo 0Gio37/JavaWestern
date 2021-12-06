@@ -1,17 +1,16 @@
 package fr.western.human;
 
-public class Ripoux implements Hors_la_loi{
+public class Ripoux extends Humain implements Hors_la_loi{
 
-    private String name;
     private int forFreeze;
 
     public Ripoux(String name, int forFreeze){
-        this.name = name;
+        super(name);
         this.forFreeze = forFreeze;
     }
 
     public String getName(){
-        return this.name;
+        return super.getName();
     }
     public void kidnappe(Dame dame){
         System.out.println("Ah ah ! "+dame.getName()+" tu es mienne désormais !");
@@ -26,7 +25,7 @@ public class Ripoux implements Hors_la_loi{
     }
 
     public void quel_est_ton_nom(){
-        System.out.println("Je suis "+this.name);
+        System.out.println("Je suis "+super.getName());
     }
 
 }

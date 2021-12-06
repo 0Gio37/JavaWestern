@@ -2,17 +2,14 @@ package fr.western.human;
 
 public class Barman extends Humain{
 
-    private String name;
     private String barName;
 
     public Barman(String name){
         super(name, "vin");
-        this.name = name;
     }
 
     public Barman(String name, String barName){
         super(name, "vin");
-        this.name = name;
         this.barName = "Chez "+barName;
     }
 
@@ -26,8 +23,11 @@ public class Barman extends Humain{
     }
 
     public void parle(String texte){
-        super.parle(texte);
-        System.out.println(" Coco");
+        super.parle(texte+ " Coco");
+    }
+
+    public void serve(Humain humain){
+        this.parle("Voila ta boisson "+humain.getName());
     }
 
 
