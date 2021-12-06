@@ -13,13 +13,22 @@ public class Histoire {
         Sherif sherif1 = new Sherif("Rosco",5);
         Cowboy sherif2 = new Sherif("BossOg", 1);
         Ripoux ripoux1 = new Ripoux("gégé", 500);
+        Femme_Brigand femmeBrigand1 = new Femme_Brigand("Calmamity","red");
 
-        Humain[] tbHumain = new Humain[5];
+        femmeBrigand1.boire();
+        femmeBrigand1.kidnappe(dame1);
+        femmeBrigand1.emprisonneBy(cowboy1);
+
+
+
+
+        Humain[] tbHumain = new Humain[6];
         tbHumain[0] = humain1;
         tbHumain[1] = cowboy1;
         tbHumain[2] = dame1;
         tbHumain[3] = sherif1;
         tbHumain[4] = brigand1;
+        tbHumain[5] = femmeBrigand1;
 
         for (int i=0; i< tbHumain.length; i++){
             System.out.println(tbHumain[i].getName());
